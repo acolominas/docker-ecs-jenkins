@@ -6,8 +6,6 @@ on:
       - closed
     branches:
       - development
-    paths:
-      - 'Dockerfile'
 env:
   ENVIRONMENT: ${{ github.base.ref }}
   ECR_REPOSITORY: ${{ vars.ECR_REPOSITORY }}
