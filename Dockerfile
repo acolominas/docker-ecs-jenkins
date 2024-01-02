@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:lts-jdk21
+FROM jenkins/jenkins:latest-jdk21
 USER root
 RUN apt-get update && apt-get -y upgrade
 USER jenkins
