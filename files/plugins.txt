@@ -1,1 +1,2 @@
-
+amazon-ecs:1.48
+google-login:1.8
