@@ -1,0 +1,22 @@
+{
+    "family": "aci-ecstsk-jenkins-dev-euw1-01",
+    "taskRoleArn": "arn:aws:iam::224322756201:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
+    "executionRoleArn": "arn:aws:iam::224322756201:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
+    "containerDefinitions": [
+        {
+            "name": "dummy",
+            "image": "nginx",
+            "portMappings": [
+                {
+                    "containerPort": 8080,
+                    "hostPort": 8080,
+                    "protocol": "tcp"
+                }
+            ],
+            "essential": true,
+            "environment": [],
+            "mountPoints": [],
+            "volumesFrom": []
+        }
+    ]
+}
