@@ -2,6 +2,12 @@
     "family": "aci-ecstsk-jenkins-dev-euw1-01",
     "taskRoleArn": "arn:aws:iam::224322756201:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
     "executionRoleArn": "arn:aws:iam::224322756201:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
+    "requiresCompatibilities : [
+      "FARGATE"
+    ],
+    "networkMode"             : "awsvpc",
+    "cpu"                      : "2048",
+    "memory"                   : "4096",
     "containerDefinitions": [
         {
             "name": "dummy",
