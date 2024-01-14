@@ -1,10 +1,8 @@
 {
     "family": "aci-ecstsk-jenkins-dev-euw1-01",
-    "taskRoleArn": "arn:aws:iam::224322756201:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
-    "executionRoleArn": "arn:aws:iam::224322756201:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
-    "requiresCompatibilities : [
-      "FARGATE"
-    ],
+    "taskRoleArn": "arn:aws:iam::224322756201:role/aci-iamrole-jenkins-dev-euw1-01",
+    "executionRoleArn": "arn:aws:iam::224322756201:role/aci-iamrole-jenkins-dev-euw1-01",
+    "requiresCompatibilities" : ["FARGATE"],
     "networkMode"             : "awsvpc",
     "cpu"                      : "2048",
     "memory"                   : "4096",
