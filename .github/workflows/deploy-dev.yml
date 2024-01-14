@@ -10,7 +10,7 @@ env:
   ENVIRONMENT: ${{ github.base.ref }}
   ECR_REPOSITORY: ${{ vars.ECR_REPOSITORY }}
   ECS_TASK_DEFINITION: infrastructure/development/aws/jenkins_task_definition.json
-  CONTAINER_NAME: dummy
+  CONTAINER_NAME: jenkins
 
 jobs:
   deploy:
