@@ -8,7 +8,7 @@
     "memory"                   : "4096",
     "containerDefinitions": [
         {
-            "name": "dummy",
+            "name": "jenkins",
             "image": "nginx",
             "portMappings": [
                 {
