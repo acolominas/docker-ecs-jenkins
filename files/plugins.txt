@@ -1,2 +1,2 @@
 amazon-ecs:1.48
-google-login:1.8
+google-login:109.v022b_cf87b_e5b_
