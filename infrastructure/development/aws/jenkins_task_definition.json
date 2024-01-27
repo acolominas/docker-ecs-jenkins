@@ -42,11 +42,7 @@
         "name" : "jenkins-efs",
         "efsVolumeConfiguration": {
           "fileSystemId": "fs-0c3d96d116126915e",
-          "transitEncryption": "ENABLED",
-          "authorizationConfig": {
-            "AccessPointId": "fsap-01daeb6310863e269",
-            "IAM": "ENABLED"
-          }
+          "transitEncryption": "ENABLED"
         }
      }
    ]
