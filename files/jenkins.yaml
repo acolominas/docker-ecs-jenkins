@@ -1,22 +1,25 @@
 jenkins:
-    systemMessage: "Amazon Fargate Demo"
-    numExecutors: 0
-    remotingSecurity:
-      enabled: true
-    agentProtocols:
-        - "JNLP4-connect"
-    securityRealm:
-        local:
-            allowsSignup: false
-            users:
-                - id: ecsuser
-                  password: "sD8n6CYfai92ui"
-    authorizationStrategy:
-        globalMatrix:
-            grantedPermissions:
-                - "Overall/Read:authenticated"
-                - "Job/Read:authenticated"
-                - "View/Read:authenticated"
-                - "Overall/Administer:authenticated"
-    crumbIssuer: "standard"
-    slaveAgentPort: 50000
+  systemMessage: "Amazon Fargate Demo"
+  numExecutors: 0
+  remotingSecurity:
+    enabled: true
+  agentProtocols:
+      - "JNLP4-connect"
+  securityRealm:
+    local:
+      allowsSignup: false
+      users:
+        - id: ecsuser
+          password: "sD8n6CYfai92ui"
+  authorizationStrategy:
+    globalMatrix:
+      grantedPermissions:
+        - "Overall/Read:authenticated"
+        - "Job/Read:authenticated"
+        - "View/Read:authenticated"
+        - "Overall/Administer:authenticated"
+  crumbIssuer: "standard"
+  slaveAgentPort: 50000
+security:
+  sSHD:
+    port: -1
