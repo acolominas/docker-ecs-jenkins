@@ -45,7 +45,7 @@
           "transitEncryption": "ENABLED",
           "authorizationConfig": {
             "AccessPointId": "fsap-01daeb6310863e269",
-            "iam": "ENABLED"
+            "IAM": "ENABLED"
           }
         }
      }
