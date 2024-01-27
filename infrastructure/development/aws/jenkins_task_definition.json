@@ -6,9 +6,6 @@
     "networkMode"             : "awsvpc",
     "cpu"                      : "2048",
     "memory"                   : "4096",
-    "environment": [
-      { "name" : "JAVA_OPTS", "value" : "-Djenkins.install.runSetupWizard=false" }
-    ],
     "containerDefinitions": [
         {
             "name": "jenkins",
@@ -23,13 +20,16 @@
             "essential": true,
             "environment": [],
             "mountPoints": [],
-            "volumesFrom": []
+            "volumesFrom": [],
+            "environment": [
+              { "name" : "JAVA_OPTS", "value" : "-Djenkins.install.runSetupWizard=false" }
+            ],
+            "secrets": [
+              {
+                "name": "ADMIN_PWD",
+                "valueFrom": "arn:aws:secretsmanager:eu-west-1:224322756201:secret:aci-smsecrt-jenkins-dev-euw1-admin-FhLzOy"
+              }
+            ]
         }
-    ],
-    "secrets": [
-      {
-        "name": "ADMIN_PWD",
-        "valueFrom": "arn:aws:secretsmanager:eu-west-1:224322756201:secret:aci-smsecrt-jenkins-dev-euw1-admin-FhLzOy"
-      }
     ]
 }
