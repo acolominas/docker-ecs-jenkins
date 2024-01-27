@@ -19,7 +19,12 @@
             ],
             "essential": true,
             "environment": [],
-            "mountPoints": [],
+            "mountPoints": [
+              {
+                "containerPath": "/var/jenkins_home",
+                "sourceVolume": "jenkins-efs"
+              }
+            ],
             "volumesFrom": [],
             "environment": [
               { "name" : "JAVA_OPTS", "value" : "-Djenkins.install.runSetupWizard=false" }
@@ -31,5 +36,18 @@
               }
             ]
         }
-    ]
+    ],
+    "volumes" : [
+      {
+        "name" : "jenkins-efs",
+        "efsVolumeConfiguration": {
+          "fileSystemId": "fs-0c3d96d116126915e",
+          "transitEncryption":"ENABLED",
+        },
+        "authorizationConfig": {
+          "AccessPointId": "fsap-01daeb6310863e269",
+          "iam": "ENABLED",
+        }
+     }
+   ]
 }
