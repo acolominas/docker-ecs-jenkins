@@ -18,7 +18,6 @@
                 }
             ],
             "essential": true,
-            "environment": [],
             "mountPoints": [
               {
                 "containerPath": "/var/jenkins_home",
